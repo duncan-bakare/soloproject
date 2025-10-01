@@ -18,13 +18,11 @@ def main():
 
         if choice == "1":
             amount = float(input("Enter income amount: "))
-            desc = input("Enter description: ")
-            tracker.add_transaction(amount, "Income", desc)
+            tracker.add_transaction(amount, "Income")
 
         elif choice == "2":
             amount = float(input("Enter expense amount: "))
-            desc = input("Enter description: ")
-            tracker.add_transaction(-amount, "Expense", desc)
+            tracker.add_transaction(-amount, "Expense")
 
         elif choice == "3":
             tracker.list_transactions()
